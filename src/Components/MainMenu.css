@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Moon+Dance&family=Mulish:wght@300;400;800&family=Roboto:wght@100;300;400;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  overflow: hidden; 
+} 
+
+.mainmenu {
+  width: 302px;
+  height: 100vh;
+  left: 0;
+  background-color: #ABEBD9;
+}
+
+.m-menu {
+  padding-left: 42px;
+  padding-top: 33px;
+}
+
+.m-user__foto {
+  width: 100px;
+  height: 100px;
+  background: url(../images/photo_2022-01-24_19-55-11.jpg), #fff;
+  border-radius: 100px;
+  box-shadow: 0px 4px 8px -3px #DDD9D9;
+  padding-left: 2px;
+}
+
+.m-user__name {
+  padding-top: 21px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #05350B;
+}
+
+.main-menu {
+  padding-top: 71px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #05350B;
+}
+
+.m__item {
+  display: block;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  height: 42px;
+  width: 174px;
+  justify-content: center;
+  align-items: center;
+}
+
+.m__item:hover {
+  display: block;
+  background-color: rgba(22, 66, 28, 0.2);
+  border-radius: 3px;
+  color: #000;
+  cursor: pointer;
+  padding-left: 8px;
+}

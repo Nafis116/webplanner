@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Moon+Dance&family=Mulish:wght@300;400;800&family=Roboto:wght@100;300;400;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 100vw;
+  height: 84px;
+  display: flex;
+}
+
+.header__logo {
+  background-color: #00A7AE;
+  height: 84px;
+  width: 302px;
+  padding-top: 16px;
+  padding-left: 46px;
+}
+
+.header__logo_logo {
+  width: 105px;
+  height: 57px;
+  background: url(../images/header__logo.svg);
+  background-repeat: no-repeat;
+}
+
+.header__search {
+  background-color: #fff;
+  padding-left: 78px;
+  padding-top: 31px;
+  position: relative;
+}
+
+.header-search__form-input {
+  font-family: 'Roboto', sans-serif;
+  width: 462px;
+  height: 28px;
+  border: 1px solid #16421C;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 10px;
+  justify-content: center;
+  outline: none;
+}
+
+.header-search__form-submit {
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.bi-search {
+  margin-right: 5px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.time {
+  font-family: 'Roboto', sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 70px;
+  color: #16421C;
+  margin: 7px 0 0 650px
+}
