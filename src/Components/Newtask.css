@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Moon+Dance&family=Mulish:wght@300;400;800&family=Roboto:wght@100;300;400;800&display=swap');
+
+.new-task {
+  padding-top: 19px;
+  padding-left: 16px;
+}
+.new-task__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #06350D;
+  margin-left: 21px;
+}
+.task {
+  background-color: #fff;
+  width: 80%;
+  height: 720px;
+  margin-top: 18px;
+  -webkit-box-shadow: 0px -4px 12px -3px rgba(34, 60, 80, 0.36);
+  -moz-box-shadow: 0px -4px 12px -3px rgba(34, 60, 80, 0.36);
+  box-shadow: 0px -4px 12px -3px rgba(34, 60, 80, 0.36);
+  padding-left: 67px;
+}
+
+.form-name {
+  width: 90%;
+  border: 0;
+  height: 33px;
+  margin-top: 55px;
+  padding-left: 20px;
+  border-bottom: 1px solid #C4C4C4;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000;
+  outline: none;
+}
+
+.form-name::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 33px;
+  color: #918686;
+}
+
+.form__div {
+  margin-top: 55px;
+  border-bottom: 2px solid #918686;
+  width: 90%;
+  padding-bottom: 20px;
+}
+
+.label {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #696666;
+}
+
+.form-inCharge {
+  padding-left: 10px;
+  margin-left: 53px;
+  width: 284px;
+  height: 42px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  outline: none;
+}
+
+.form-inCharge::placeholder {
+  color: #696666;
+}
+
+.form__inCharge-btn {
+  width: 245px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #696666;
+  background: #E3F2EC;
+  border: 0;
+  border-radius: 3px;
+  align-items: center;
+  margin: 0px 10px;
+  padding: 10px 17px;
+}
+
+.deadline {
+  margin-left: 30px !important;
+}

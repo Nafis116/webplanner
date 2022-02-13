@@ -48,7 +48,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #05350B;
 }
 
 .m__item {
@@ -60,6 +59,8 @@ body {
   width: 174px;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #05350B;
 }
 
 .m__item:hover {

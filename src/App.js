@@ -1,14 +1,13 @@
-import './App.css';
 import MainPage from './Components/MainPage';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route exact path="/" element={ <MainPage/> }></Route>
-      </Routes>
-    </div>
+    <BrowserRouter>
+      <MainPage/> 
+    </BrowserRouter>
   );
 }
 

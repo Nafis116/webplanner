@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
+import { Link } from 'react-router-dom';
+
 import './Header.css';
 
 export default class Header extends Component {
@@ -21,7 +23,7 @@ export default class Header extends Component {
     return (
       <div className='header'>
         <div className='header__logo'>
-          <div className='header__logo_logo'></div>
+          <Link to='/'><div className='header__logo_logo'></div></Link>
         </div>
         <div className='header__search'>
           <form className="header-search__form" onSubmit={this.searchBoxSubmitHandler}>

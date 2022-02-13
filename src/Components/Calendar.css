@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Moon+Dance&family=Mulish:wght@300;400;800&family=Roboto:wght@100;300;400;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar {
+  margin-left: 91px;
+  margin-top: 30px;
+  width: 956px;
+}
+
+.calendar__title {
+  margin-bottom: 16px;
+  margin-left: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #003767;
+}
+
+.calendar__header {
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 25px;
+  padding-left: 37px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.calendar__header-menu {
+  height: 40px;
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+  padding-bottom: 17px;
+}
+
+.header__item {
+  margin-right: 40px;
+  width: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  padding: 10px 25px;
+}
+
+.header__item-last {
+  width: 130px;
+}
+
+.header__item:hover {
+  border: 3px solid #00A7AE;
+  box-sizing: border-box;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.header__date-info {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+  padding-bottom: 19px;
+  padding-left: 23px;
+  text-transform: uppercase;
+}
+
+.week-day {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 136.5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 0 0;
+}
+
+.calendar__table {
+  background: #EAEDF3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1px solid #DDD9D9;
+  border-right: 1px solid #DDD9D9;
+}
+
+td:nth-child(7) {
+  border-right: 0px solid;
+}
+
+.today {
+  background: #e0e2e7;
+}
+
+.calendar-day {
+  width: 136px;
+  height: 119px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
