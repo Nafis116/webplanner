@@ -16,7 +16,7 @@
 .task {
   background-color: #fff;
   width: 80%;
-  height: 720px;
+  /* height: 720px; */
   margin-top: 18px;
   -webkit-box-shadow: 0px -4px 12px -3px rgba(34, 60, 80, 0.36);
   -moz-box-shadow: 0px -4px 12px -3px rgba(34, 60, 80, 0.36);
@@ -51,9 +51,11 @@
 
 .form__div {
   margin-top: 55px;
-  border-bottom: 2px solid #918686;
-  width: 90%;
   padding-bottom: 20px;
+  padding-left: 20px;
+  /* border-bottom: 2px solid #918686; */
+  width: 90%;
+  height: 30px;
 }
 
 .label {
@@ -97,8 +99,64 @@
   align-items: center;
   margin: 0px 10px;
   padding: 10px 17px;
+  cursor: pointer;
 }
 
+.form__inCharge-btn:hover {
+  background: #8FDBD1;
+}
+
+.form__inCharge-btn:active {
+  background: #E3F2EC;
+  color: #3E3B3B;
+}
+
+
 .deadline {
-  margin-left: 30px !important;
+  margin-left: 31px !important;
+}
+
+.stages {
+  margin-left: 24px !important;
+}
+
+.form-result {
+  margin-left: 95px;
+  width: 18px;
+  height: 18px;
+}
+
+.label-result {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #696666;
+  margin-left: 10px;
+}
+
+.new-task__btn {
+  width: 233px;
+  height: 61px;
+  background: #DBFBCC;
+  border-radius: 5px;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #06350D;
+  cursor: pointer;
+  margin: 40px 0 40px 20px;
+}
+
+.new-task__btn:hover {
+  background: #C1F9A7;
+}
+
+.new-task__btn:active {
+  background: #EBFAE4;
+  border: 1px solid #16421C;
 }
