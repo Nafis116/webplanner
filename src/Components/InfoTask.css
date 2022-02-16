@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Moon+Dance&family=Mulish:wght@300;400;800&family=Roboto:wght@100;300;400;800&display=swap');
+
+.info-task {
+  padding-top: 19px;
+  padding-left: 16px;
+}
+
+.info-task__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #06350D;
+  margin-left: 21px;
+}
+
+.info {
+  background-color: #fff;
+  width: 80%;
+  /* height: 720px; */
+  margin-top: 18px;
+  padding-left: 67px;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 0px -4px 12px -3px rgba(34, 60, 80, 0.36);
+  -moz-box-shadow: 0px -4px 12px -3px rgba(34, 60, 80, 0.36);
+  box-shadow: 0px -4px 12px -3px rgba(34, 60, 80, 0.36);
+}
+
+.info-name {
+  width: 90%;
+  border: 0;
+  height: 60px;
+  padding-left: 20px;
+  border-bottom: 1px solid #C4C4C4;
+} 
+
+.info-name h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 33px;
+  color: #222222;
+  padding-top: 30px;
+}
+
+.info-stages {
+  display: flex;
+  padding-top: 25px;
+}
+
+.info-stages__title {
+  margin-right: 154px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.info-stages__stages p {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border: 1px solid #8FDBD1;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 300px;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #696666;
+}
+
+.info-stages__btn {
+  width: 138px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #DBFBCC;
+  border: 0;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #06350D;
+  cursor: pointer;
+}
+
+.info-stages__btn:hover {
+  background: #C1F9A7;
+}
+
+.info-stages__btn:active {
+  background: #EBFAE4;
+  border: 1px solid #16421C;
+}
+
+.inCharge {
+  margin-right: 50px;
+}
+
+.deadline1 {
+  margin-right: 22px;
+}

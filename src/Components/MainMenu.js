@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 import './MainMenu.css';
 
 export default class MainMenu extends Component {
-  state = {
-
-  }
   render() {
     return (
       <div className='mainmenu'>

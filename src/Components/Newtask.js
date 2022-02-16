@@ -1,16 +1,17 @@
 import React, { Component } from "react";
+import store from "../Redux/store";
+import Tasks from "./Tasks";
 
 import './Newtask.css';
 
 export default class Newtask extends Component {
   state = {
-    task: [{
+      id: '',
       nameTask: '',
       inCharge: '',
       deadline: '',
       stages: '',
       result: false
-    }]
   }
 
   handleChange = (e) => {
@@ -31,23 +32,16 @@ export default class Newtask extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    var self = this;
-    fetch('/api/tasks', {
-      method: 'POST', 
-      data: {
-        nameTask: self.refs.nameTask,
-        inCharge: self.refs.inCharge,
-        deadline: self.refs.deadline,
-        stages: self.refs.stages,
-        result: self.refs.result
+    store.dispatch({
+      type: 'ADD_TO-LIST',
+      payload:{
+        nameTask: this.state.nameTask,
+        incharge: this.state.inCharge,
+        deadline: this.state.deadline,
+        stage1: this.state.stage1
       }
-    })
-    .then(function(res) {
-      return res.json()
-    })
-    .then(function(body) {
-      console.log(body)
-    })
+  })
+  console.log('Добавил:' + this.state)
   };
 
   render() {
@@ -55,14 +49,14 @@ export default class Newtask extends Component {
       <div className="new-task">
         <h1 className="new-task__title">Новая задача</h1>
         <div className="task">
-          <form method="POST" onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit}>
             <div>
               <label></label>
               <input 
                   type='text' 
                   id="nameTask"
                   ref='nameTask'
-                  value={this.state.task.nameTask} 
+                  value={this.state.nameTask} 
                   onChange={this.handleChange} 
                   className='form-name'
                   placeholder="Введите название задачи"
@@ -118,7 +112,7 @@ export default class Newtask extends Component {
                   id="result"
                   ref='result'
                   name="result"
-                  value={this.state.task.result} 
+                  value={this.state.result} 
                   onChange={this.handleChange} 
                   className='form-result'>
               </input>

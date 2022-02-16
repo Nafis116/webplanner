@@ -4,8 +4,12 @@ import MainMenu from './MainMenu';
 import Calendar from './Calendar';
 import Tasks from './Tasks';
 import { Route, Routes } from 'react-router-dom';
+import InfoTask from './InfoTask';
+import Newtask from './Newtask';
 
 import './MainPage.css';
+
+
 
 export default class MainPage extends Component {
   render() {
@@ -20,6 +24,8 @@ export default class MainPage extends Component {
           <Routes>
             <Route path="/" exact element={ <Calendar/> }></Route>
             <Route path="/tasks" element={ <Tasks/> }></Route>
+            <Route path="/tasks/info_:id" element={ <InfoTask/> }></Route>
+            <Route path="/tasks/newtask" element={ <Newtask/> }></Route>
           </Routes>
           </section>
         </main>

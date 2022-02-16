@@ -3,11 +3,12 @@ const { body, validationResult } = require('express-validator/check');
 
 function create(req, res, next) {
   const errors = validationResult(req);
-  if(!errors.isEmpty()){
+  console.log(req.body);
+  if(errors.isEmpty()){
     return res.status(422).json({errors: errors.array()})
   } 
-    res.send(req.body);
-  }
+  // console.log(req.body);
+    
   
   Tasks.findOne({where: { namesTask: req.body.namesTask }})
        .then(task => {

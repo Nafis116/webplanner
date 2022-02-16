@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Newtask from './Newtask';
+import { Link } from 'react-router-dom';
+import store from '../Redux/store';
 
 import './Tasks.css';
 
 export default class Tasks extends Component {
   state = {
-    isActive: false
+    isActive: false,
+    tasks:[]
   }
 
   handleShow = () => {
@@ -19,19 +22,52 @@ export default class Tasks extends Component {
       this.setState({
         isActive: false
       })
+      console.log('Clicked Esc')
     }
   }
 
   componentDidMount(){    
-    document.addEventListener("keydown", this.escFunction, false);  
-  }  
+    document.addEventListener("keydown", this.escFunction, false); 
+
+    const state = store.getState();
+    this.setState({ 
+      tasks: state.tasks 
+    });
+
+    store.subscribe(() => {
+      const state = store.getState();
+      this.setState({ 
+        tasks: state.tasks 
+      });
+    });
+  };
+  
   componentWillUnmount(){    
     document.removeEventListener("keydown", this.escFunction, false);  
   }
 
+  deleteTask = (id) => {
+    store.dispatch({
+        type: 'DELETE_TASK-FROM_LIST',
+        payload:{
+          id: id
+        }
+    })
+  }
+
+  getID = (id) => {
+    store.dispatch({
+        type: 'GET_ID',
+        payload:{
+          id: id
+        }
+    })
+  }
+
+
   render() {
     const { isActive } = this.state;
-
+  
     return (
       <div>
         {
@@ -47,7 +83,9 @@ export default class Tasks extends Component {
                   </ul>
                 </div>
                 <div>
+                <Link className='task__item' to='/tasks/newtask'>
                   <button onClick={this.handleShow} className='tasks__header-btn'>Добавить задачу</button>
+                </Link>
                 </div>
               </div>
 
@@ -85,14 +123,24 @@ export default class Tasks extends Component {
                     <div className='tasks-content__1'>
                       <h1 className='tasks-content__title'>Незапланированное</h1>
                     </div>
-                    <p>{}</p>
                   </div>
                   
                   <div  className='tasks-contetnt__div2'>
                     <div className='tasks-content__2'>
                       <h1 className='tasks-content__title'>Задачи на неделю</h1>
                     </div>
-                    <p>{}</p>
+                    <ul>
+                      {
+                        this.state.tasks.map((item) => (
+                          <div className='tasks__list'>
+                          <Link onClick={() => this.getID(item.id)} className='task__item' to={`/tasks/info_${item.id}`}>
+                            <li className='tasks-content__2-li' key={item.id}> {item.nameTask} </li>
+                          </Link>
+                          <button onClick={() => this.deleteTask(item.id)} type="button" className="task-delete">X</button>
+                          </div>
+                        ))
+                      }
+                    </ul>
                   </div>
                 </div>
               </div>
